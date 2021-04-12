@@ -2495,6 +2495,7 @@
                 "sledbreak": 5000,
                 "sledbreak_boss1": 12000,
                 "sledbreak_boss2": 8000,
+                "unshieldedBonus": 1.5,
                 "damageModifiers": [
                     {
                         "weaponID": "shotgun",

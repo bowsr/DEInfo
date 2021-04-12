@@ -40,4 +40,15 @@ Hammer
     Hammer damage source is hammer_slam_aoe_super.decl. No idea where any mitigation values are.
     Some demons take 1.25x more damage from the Hammer (Imps/Turrets/MaykrDrones)
     Need to test the rest of the demons.
+
+Crucible
+    Doom Hunter
+        Crucible was nerfed in Update 2 to only do 0.25x damage against Doom Hunters and the Gladiator.
+        This change does not affect normal Doom Hunters since crucible is set to oneshot the sled, and sledless HP is 2500.
+        (Does affect Doom Hunter Boss variants when sledless)
+
+Doom Hunter
+    Doom Hunters take 1.5x damage when their shield is broken. (Does not apply to BP)
+    Crucible is redirected to the sled, even if you hit the shield. So is Blood Punch.
+    Heat Blast is redirected to the shield.
         
