@@ -1,0 +1,3168 @@
+{
+    "5.0": {
+        "id": 50,
+        "prev": 41,
+        "weapons": [
+            {
+                "id": "hammer",
+                "damage": [
+                    {
+                        "type": "slam",
+                        "value": 800
+                    }
+                ]
+            }
+        ],
+        "demons": [
+            {
+                "id": "baron_armored",
+                "armor": 0.5,
+                "armorHP": 3000,
+                "armorModifiers": [
+                    {
+                        "weaponID": "plasma",
+                        "damage": [
+                            {
+                                "type": "all",
+                                "value": 1.33
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "plasma_heatblast",
+                        "damage": [
+                            {
+                                "type": "blast",
+                                "value": 1.5
+                            },
+                            {
+                                "type": "mastery",
+                                "value": 1.15
+                            },
+                            {
+                                "type": "mastery_splash",
+                                "value": 1.15
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "plasma_microwave",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 1.3
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "supershotgun",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.3
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "ballista",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.3
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "ballista_arbalest",
+                        "damage": [
+                            {
+                                "type": "all",
+                                "value": 0.3
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "unmaykr",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.05
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "prowler_cursed",
+                "damageModifiers": [
+                    {
+                        "weaponID": "bloodpunch",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": "4"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "soldier_riot",
+                "health": 500,
+                "stagger": 175,
+                "damageModifiers": [
+                    {
+                        "weaponID": "rocket_remotedet",
+                        "damage": [
+                            {
+                                "type": "all",
+                                "value": 2.5
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "screecher",
+                "health": 100,
+                "stagger": 0,
+                "regen": 25,
+                "damageModifiers": [
+                    {
+                        "weaponID": "shotgun",
+                        "damage": [
+                            {
+                                "type": "all",
+                                "value": 2
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "heavycannon",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 1.43
+                            },
+                            {
+                                "type": "splash",
+                                "value": 0
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "plasma",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 1.29
+                            },
+                            {
+                                "type": "splash",
+                                "value": 0
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "plasma_microwave",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.1
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "ballista",
+                        "damage": [
+                            {
+                                "type": "splash",
+                                "value": 0
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "imp_stone",
+                "health": 200,
+                "stagger": 50,
+                "baseModifier": 0.15,
+                "damageModifiers": [
+                    {
+                        "weaponID": "plasma_heatblast",
+                        "damage": [
+                            {
+                                "type": "mastery",
+                                "value": 0.7777
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "plasma_microwave",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.2
+                            }
+                        ]
+                    }
+                ],
+                "stoneModifiers": [
+                    {
+                        "weaponID": "shotgun_sticky",
+                        "damage": [
+                            {
+                                "type": "splash",
+                                "value": 0.05
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "shotgun_fullauto",
+                        "damage": [
+                            {
+                                "type": "all",
+                                "value": 0.5
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "plasma_heatblast",
+                        "damage": [
+                            {
+                                "type": "blast",
+                                "value": 0.1
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "rocket",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.1
+                            },
+                            {
+                                "type": "splash",
+                                "value": 0.05
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "rocket_lockon",
+                        "damage": [
+                            {
+                                "type": "all",
+                                "value": 0.04
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "supershotgun",
+                        "damage": [
+                            {
+                                "type": "all",
+                                "value": 0.05
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "ballista",
+                        "damage": [
+                            {
+                                "type": "splash",
+                                "value": 0
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "bfg",
+                        "damage": [
+                            {
+                                "type": "all",
+                                "value": 1
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "unmaykr",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 1
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "bloodpunch",
+                        "damage": [
+                            {
+                                "type": "all",
+                                "value": 0.07
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "flamebelch",
+                        "damage": [
+                            {
+                                "type": "all",
+                                "value": 1
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "hammer",
+                        "damage": [
+                            {
+                                "type": "slam",
+                                "value": 1
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "trooper",
+                "health": 35,
+                "stagger": 0,
+                "damageModifiers": [
+                    {
+                        "weaponID": "frag",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "dash",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "flamebelch",
+                        "damage": [
+                            {
+                                "type": "all",
+                                "value": 50
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "darklord",
+                "health": -1,
+                "health_stage1": 20000,
+                "health_stage2": 15000,
+                "health_stage3": 20000,
+                "stagger": 0,
+                "nonFalterResistance": 0.35,
+                "damageModifiers": [
+                    {
+                        "weaponID": "bfg",
+                        "damage": [
+                            {
+                                "type": "tendril",
+                                "value": 0.1
+                            },
+                            {
+                                "type": "direct",
+                                "value": 0.95
+                            },
+                            {
+                                "type": "splash",
+                                "value": 0.5
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "unmaykr",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.3
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "flamebelch",
+                        "damage": [
+                            {
+                                "type": "all",
+                                "value": 0
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "4.1": {
+        "id": 41,
+        "prev": 31,
+        "weapons": [],
+        "demons": []
+    },
+    "3.1": {
+        "id": 31,
+        "prev": 21,
+        "weapons": [],
+        "demons": [
+            {
+                "id": "turret",
+                "health": 1000,
+                "stagger": 0,
+                "damageModifiers": [
+                    {
+                        "weaponID": "shotgun",
+                        "damage": [
+                            {
+                                "type": "all",
+                                "value": 0.75
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "shotgun_sticky",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 1.5
+                            },
+                            {
+                                "type": "splash",
+                                "value": 2
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "heavycannon_micromissiles",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 1.5
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "heavycannon_precision",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 2
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "supershotgun",
+                        "damage": [
+                            {
+                                "type": "all",
+                                "value": 0.4
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "chaingun",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.5
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "chaingun_mobileturret",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.5
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "spirit",
+                "health": 2750,
+                "stagger": 0,
+                "damageModifiers": [
+                    {
+                        "weaponID": "plasma_microwave",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.74
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "samur",
+                "health": 6000,
+                "stagger": 510,
+                "damageModifiers": [
+                    {
+                        "weaponID": "shotgun_fullauto",
+                        "damage": [
+                            {
+                                "type": "all",
+                                "value": 0.5
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "heavycannon",
+                        "damage": [
+                            {
+                                "type": "all",
+                                "value": 0.87
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "heavycannon_micromissiles",
+                        "damage": [
+                            {
+                                "type": "splash",
+                                "value": 0.33
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "heavycannon_precision",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.6
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "plasma",
+                        "damage": [
+                            {
+                                "type": "all",
+                                "value": 0.7
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "plasma_microwave",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.33
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "rocket_lockon",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.33
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "supershotgun",
+                        "damage": [
+                            {
+                                "type": "all",
+                                "value": 0.75
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "ballista",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.525
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "ballista_arbalest",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.363
+                            },
+                            {
+                                "type": "splash",
+                                "value": 0.575
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "ballista_destroyer",
+                        "damage": [
+                            {
+                                "type": "all",
+                                "value": 0.4
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "chaingun",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.44
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "chaingun_mobileturret",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.44
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "bfg",
+                        "damage": [
+                            {
+                                "type": "tendril",
+                                "value": 0.025
+                            },
+                            {
+                                "type": "direct",
+                                "value": 0.8
+                            },
+                            {
+                                "type": "splash",
+                                "value": 0.1667
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "unmaykr",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.15
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "flamebelch",
+                        "damage": [
+                            {
+                                "type": "all",
+                                "value": 0
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "2.1": {
+        "id": 21,
+        "prev": 11,
+        "weapons": [],
+        "demons": [
+            {
+                "id": "doomhunter",
+                "damageModifiers": [
+                    {
+                        "weaponID": "crucible",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.25
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "marauder",
+                "damageModifiers": [
+                    {
+                        "weaponID": "supershotgun",
+                        "damage": [
+                            {
+                                "type": "all",
+                                "value": 0.85,
+                                "cap": 750
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "rocket_lockon",
+                        "damage": [
+                            {
+                                "type": "all",
+                                "value": 0.75
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "ballista",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 1,
+                                "cap": 750
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "unmaykr",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.45
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "gladiator",
+                "damageModifiers": [
+                    {
+                        "weaponID": "rocket_lockon",
+                        "damage": [
+                            {
+                                "type": "all",
+                                "value": 0.666
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "crucible",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.25
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "1.1": {
+        "id": 11,
+        "prev": 10,
+        "weapons": [],
+        "demons": [
+            {
+                "id": "arachnotron",
+                "damageModifiers": [
+                    {
+                        "weaponID": "plasma_microwave",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.6
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "cacodemon",
+                "damageModifiers": [
+                    {
+                        "weaponID": "plasma_microwave",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.5
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "dreadknight",
+                "damageModifiers": [
+                    {
+                        "weaponID": "plasma_microwave",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.6
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "hellknight",
+                "damageModifiers": [
+                    {
+                        "weaponID": "plasma_microwave",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.5
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "mancubus",
+                "damageModifiers": [
+                    {
+                        "weaponID": "plasma_microwave",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.7
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "mancubus_cyber",
+                "damageModifiers": [
+                    {
+                        "weaponID": "plasma_microwave",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 1.2
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "ballista_arbalest",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.5
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "painelemental",
+                "damageModifiers": [
+                    {
+                        "weaponID": "plasma_microwave",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 1
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "pinky",
+                "damageModifiers": [
+                    {
+                        "weaponID": "plasma_microwave",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.2
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "pinky_spectre",
+                "damageModifiers": [
+                    {
+                        "weaponID": "plasma_microwave",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.5
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "revenant",
+                "damageModifiers": [
+                    {
+                        "weaponID": "plasma_microwave",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.4
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "whiplash",
+                "damageModifiers": [
+                    {
+                        "weaponID": "plasma_microwave",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.4
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "carcass",
+                "damageModifiers": [
+                    {
+                        "weaponID": "plasma_microwave",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.24
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "prowler",
+                "damageModifiers": [
+                    {
+                        "weaponID": "plasma_microwave",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.2
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "archvile",
+                "damageModifiers": [
+                    {
+                        "weaponID": "plasma_microwave",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.545
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "baron",
+                "damageModifiers": [
+                    {
+                        "weaponID": "plasma_microwave",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.681
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "doomhunter",
+                "damageModifiers": [
+                    {
+                        "weaponID": "plasma_microwave",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.576
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "marauder",
+                "damageModifiers": [
+                    {
+                        "weaponID": "shotgun_sticky",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 2
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "plasma_microwave",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.454
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "marauder_wolf",
+                "damageModifiers": [
+                    {
+                        "weaponID": "plasma_microwave",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.454
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "tyrant",
+                "damageModifiers": [
+                    {
+                        "weaponID": "plasma_microwave",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.909
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "gladiator",
+                "damageModifiers": [
+                    {
+                        "weaponID": "ballista_arbalest",
+                        "damage": [
+                            {
+                                "type": "splash",
+                                "value": 0.5
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "iconofsin",
+                "damageModifiers": [
+                    {
+                        "weaponID": "chaingun",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.6
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "khanmaykr",
+                "damageModifiers": [
+                    {
+                        "weaponID": "chaingun",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.6
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "1.0": {
+        "id": 10,
+        "prev": -1,
+        "weapons": [
+            {
+                "id": "shotgun",
+                "pellets": 10,
+                "damage": [
+                    {
+                        "type": "minimum",
+                        "value": 22
+                    },
+                    {
+                        "type": "maximum",
+                        "value": 28
+                    },
+                    {
+                        "type": "pointblank",
+                        "value": 32
+                    }
+                ]
+            },
+            {
+                "id": "shotgun_sticky",
+                "damage": [
+                    {
+                        "type": "direct",
+                        "value": 50
+                    },
+                    {
+                        "type": "splash",
+                        "value": 350
+                    }
+                ]
+            },
+            {
+                "id": "heavycannon",
+                "damage": [
+                    {
+                        "type": "direct",
+                        "value": 35
+                    },
+                    {
+                        "type": "splash",
+                        "value": 30
+                    }
+                ]
+            },
+            {
+                "id": "heavycannon_precision",
+                "damage": [
+                    {
+                        "type": "direct",
+                        "value": 400
+                    },
+                    {
+                        "type": "mastery_splash",
+                        "value": 400
+                    }
+                ]
+            },
+            {
+                "id": "heavycannon_micromissiles",
+                "damage": [
+                    {
+                        "type": "direct",
+                        "value": 5
+                    },
+                    {
+                        "type": "splash",
+                        "value": 100
+                    },
+                    {
+                        "type": "direct_charged",
+                        "value": 10
+                    },
+                    {
+                        "type": "splash_charged",
+                        "value": 130
+                    }
+                ]
+            },
+            {
+                "id": "plasma",
+                "damage": [
+                    {
+                        "type": "direct",
+                        "value": 35
+                    },
+                    {
+                        "type": "splash",
+                        "value": 10
+                    }
+                ]
+            },
+            {
+                "id": "plasma_heatblast",
+                "damage": [
+                    {
+                        "type": "1",
+                        "value": 300
+                    },
+                    {
+                        "type": "2",
+                        "value": 500
+                    },
+                    {
+                        "type": "3",
+                        "value": 700
+                    },
+                    {
+                        "type": "mastery",
+                        "value": 42
+                    },
+                    {
+                        "type": "mastery_splash",
+                        "value": 12
+                    }
+                ]
+            },
+            {
+                "id": "plasma_microwave",
+                "damage": [
+                    {
+                        "type": "direct",
+                        "value": 50
+                    },
+                    {
+                        "type": "explosion_fodder",
+                        "value": 100
+                    },
+                    {
+                        "type": "explosion_heavy",
+                        "value": 400
+                    },
+                    {
+                        "type": "explosion_superheavy",
+                        "value": 600
+                    }
+                ]
+            },
+            {
+                "id": "rocket",
+                "damage": [
+                    {
+                        "type": "direct",
+                        "value": 300
+                    },
+                    {
+                        "type": "splash",
+                        "value": 600
+                    }
+                ]
+            },
+            {
+                "id": "rocket_remotedet",
+                "damage": [
+                    {
+                        "type": "splash",
+                        "value": 400
+                    },
+                    {
+                        "type": "mastery",
+                        "value": 200
+                    }
+                ]
+            },
+            {
+                "id": "rocket_lockon",
+                "damage": [
+                    {
+                        "type": "direct",
+                        "value": 875
+                    },
+                    {
+                        "type": "splash",
+                        "value": 25
+                    }
+                ]
+            },
+            {
+                "id": "supershotgun",
+                "pellets": 16,
+                "damage": [
+                    {
+                        "type": "minimum",
+                        "value": 80
+                    },
+                    {
+                        "type": "maximum",
+                        "value": 90
+                    },
+                    {
+                        "type": "pointblank",
+                        "value": 100
+                    },
+                    {
+                        "type": "hook",
+                        "value": 0
+                    }
+                ]
+            },
+            {
+                "id": "ballista",
+                "damage": [
+                    {
+                        "type": "direct",
+                        "value": 800
+                    },
+                    {
+                        "type": "splash",
+                        "value": 60
+                    }
+                ]
+            },
+            {
+                "id": "ballista_arbalest",
+                "damage": [
+                    {
+                        "type": "direct",
+                        "value": 400
+                    },
+                    {
+                        "type": "splash",
+                        "value": 1200
+                    }
+                ]
+            },
+            {
+                "id": "ballista_destroyerblade",
+                "damage": [
+                    {
+                        "type": "1",
+                        "value": 800
+                    },
+                    {
+                        "type": "2",
+                        "value": 1600
+                    },
+                    {
+                        "type": "3",
+                        "value": 2400
+                    }
+                ]
+            },
+            {
+                "id": "chaingun",
+                "pellets": 4,
+                "damage": [
+                    {
+                        "type": "direct",
+                        "value": 20
+                    }
+                ]
+            },
+            {
+                "id": "chaingun_mobileturret",
+                "pellets": 4,
+                "damage": [
+                    {
+                        "type": "direct",
+                        "value": 24
+                    }
+                ]
+            },
+            {
+                "id": "chaingun_energyshield",
+                "damage": [
+                    {
+                        "type": "dash",
+                        "value": 100
+                    },
+                    {
+                        "type": "dashsmash",
+                        "value": 200
+                    },
+                    {
+                        "type": "mastery",
+                        "value": 150
+                    }
+                ]
+            },
+            {
+                "id": "bfg",
+                "damage": [
+                    {
+                        "type": "tendril",
+                        "value": 300
+                    },
+                    {
+                        "type": "direct",
+                        "value": 1000
+                    },
+                    {
+                        "type": "splash",
+                        "value": 3000
+                    }
+                ]
+            },
+            {
+                "id": "unmaykr",
+                "pellets": 3,
+                "damage": [
+                    {
+                        "type": "direct",
+                        "value": 200
+                    }
+                ]
+            },
+            {
+                "id": "crucible",
+                "damage": [
+                    {
+                        "type": "direct",
+                        "value": 10000
+                    }
+                ]
+            },
+            {
+                "id": "frag",
+                "pellets": 3,
+                "damage": [
+                    {
+                        "type": "direct",
+                        "value": 80
+                    },
+                    {
+                        "type": "splash",
+                        "value": 630
+                    },
+                    {
+                        "type": "direct_cluster",
+                        "value": 80
+                    },
+                    {
+                        "type": "splash_cluster",
+                        "value": 170
+                    }
+                ]
+            },
+            {
+                "id": "bloodpunch",
+                "damage": [
+                    {
+                        "type": "direct",
+                        "value": 600
+                    },
+                    {
+                        "type": "splash",
+                        "value": 200
+                    },
+                    {
+                        "type": "splash_upgrade",
+                        "value": 400
+                    }
+                ]
+            },
+            {
+                "id": "dash",
+                "damage": [
+                    {
+                        "type": "direct",
+                        "value": 50
+                    }
+                ]
+            },
+            {
+                "id": "punch",
+                "damage": [
+                    {
+                        "type": "direct",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "id": "flamebelch",
+                "damage": [
+                    {
+                        "type": "direct",
+                        "value": 1
+                    },
+                    {
+                        "type": "dot",
+                        "value": 0
+                    }
+                ]
+            }
+        ],
+        "demons": [
+            {
+                "id": "arachnotron",
+                "health": 3000,
+                "stagger": 500,
+                "damageModifiers": [
+                    {
+                        "weaponID": "heavycannon_micromissiles",
+                        "damage": [
+                            {
+                                "type": "splash",
+                                "value": 1.5
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "plasma_microwave",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.5
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "rocket_remotedet",
+                        "damage": [
+                            {
+                                "type": "mastery",
+                                "value": 0.6
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "ballista_arbalest",
+                        "damage": [
+                            {
+                                "type": "splash",
+                                "value": 0.8
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "cacodemon",
+                "health": 2500,
+                "stagger": 500,
+                "damageModifiers": [
+                    {
+                        "weaponID": "plasma_microwave",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.416
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "rocket_remotedet",
+                        "damage": [
+                            {
+                                "type": "mastery",
+                                "value": 0.6
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "ballista",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 1.5625
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "ballista_arbalest",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 1.5
+                            },
+                            {
+                                "type": "splash",
+                                "value": 1.75
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "dreadknight",
+                "health": 3000,
+                "stagger": 500,
+                "damageModifiers": [
+                    {
+                        "weaponID": "plasma_microwave",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.5
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "rocket_remotedet",
+                        "damage": [
+                            {
+                                "type": "mastery",
+                                "value": 0.6
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "ballista_arbalest",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.5
+                            },
+                            {
+                                "type": "splash",
+                                "value": 0.7
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "hellknight",
+                "health": 2500,
+                "stagger": 500,
+                "damageModifiers": [
+                    {
+                        "weaponID": "heavycannon_micromissiles",
+                        "damage": [
+                            {
+                                "type": "splash",
+                                "value": 1.5
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "plasma_microwave",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.416
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "rocket_remotedet",
+                        "damage": [
+                            {
+                                "type": "mastery",
+                                "value": 0.6
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "ballista_arbalest",
+                        "damage": [
+                            {
+                                "type": "splash",
+                                "value": 0.7
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "mancubus",
+                "health": 3500,
+                "stagger": 500,
+                "damageModifiers": [
+                    {
+                        "weaponID": "plasma_microwave",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.437
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "rocket_remotedet",
+                        "damage": [
+                            {
+                                "type": "mastery",
+                                "value": 0.6
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "ballista_arbalest",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.5
+                            },
+                            {
+                                "type": "splash",
+                                "value": 0.6
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "mancubus_cyber",
+                "health": 6000,
+                "stagger": 500,
+                "damageModifiers": [
+                    {
+                        "weaponID": "plasma_microwave",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.75
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "rocket_remotedet",
+                        "damage": [
+                            {
+                                "type": "mastery",
+                                "value": 0.6
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "ballista_arbalest",
+                        "damage": [
+                            {
+                                "type": "splash",
+                                "value": 0.7
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "bloodpunch",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 6
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "painelemental",
+                "health": 5000,
+                "stagger": 500,
+                "damageModifiers": [
+                    {
+                        "weaponID": "plasma_microwave",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.625
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "rocket_remotedet",
+                        "damage": [
+                            {
+                                "type": "mastery",
+                                "value": 0.6
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "ballista",
+                        "damage": [
+                            {
+                                "type": "all",
+                                "value": 1.75
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "ballista_arbalest",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 1.5
+                            },
+                            {
+                                "type": "splash",
+                                "value": 1.584
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "pinky",
+                "health": 1000,
+                "stagger": 300,
+                "armor": 0.1,
+                "damageModifiers": [
+                    {
+                        "weaponID": "plasma_microwave",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.166
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "rocket_remotedet",
+                        "damage": [
+                            {
+                                "type": "splash",
+                                "value": 2.5
+                            },
+                            {
+                                "type": "mastery",
+                                "value": 0.6
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "ballista_arbalest",
+                        "damage": [
+                            {
+                                "type": "splash",
+                                "value": 0.7
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "bloodpunch",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 6
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "pinky_spectre",
+                "health": 2000,
+                "stagger": 400,
+                "damageModifiers": [
+                    {
+                        "weaponID": "plasma_microwave",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.333
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "rocket_remotedet",
+                        "damage": [
+                            {
+                                "type": "mastery",
+                                "value": 0.6
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "ballista_arbalest",
+                        "damage": [
+                            {
+                                "type": "splash",
+                                "value": 0.7
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "bloodpunch",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 6
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "revenant",
+                "health": 2000,
+                "stagger": 500,
+                "damageModifiers": [
+                    {
+                        "weaponID": "plasma_microwave",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.333
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "rocket_remotedet",
+                        "damage": [
+                            {
+                                "type": "mastery",
+                                "value": 0.6
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "whiplash",
+                "health": 2000,
+                "stagger": 500,
+                "damageModifiers": [
+                    {
+                        "weaponID": "plasma_microwave",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.333
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "rocket_remotedet",
+                        "damage": [
+                            {
+                                "type": "mastery",
+                                "value": 0.6
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "tentacle",
+                "health": 150,
+                "stagger": 0,
+                "damageModifiers": [
+                    {
+                        "weaponID": "plasma_microwave",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.15
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "cueball",
+                "health": 25,
+                "stagger": 0,
+                "damageModifiers": [
+                    {
+                        "weaponID": "plasma_microwave",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.1
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "carcass",
+                "health": 1200,
+                "stagger": 240,
+                "damageModifiers": [
+                    {
+                        "weaponID": "plasma_microwave",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.2
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "rocket_remotedet",
+                        "damage": [
+                            {
+                                "type": "mastery",
+                                "value": 0.6
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "gargoyle",
+                "health": 300,
+                "stagger": 120,
+                "damageModifiers": [
+                    {
+                        "weaponID": "plasma",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.7777
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "plasma_microwave",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.3
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "supershotgun",
+                        "damage": [
+                            {
+                                "type": "all",
+                                "value": 2
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "imp",
+                "health": 200,
+                "stagger": 90,
+                "damageModifiers": [
+                    {
+                        "weaponID": "plasma",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.7777
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "plasma_microwave",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.2
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "supershotgun",
+                        "damage": [
+                            {
+                                "type": "all",
+                                "value": 2
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "lostsoul",
+                "health": 100,
+                "stagger": 0,
+                "damageModifiers": [
+                    {
+                        "weaponID": "plasma_microwave",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.1
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "supershotgun",
+                        "damage": [
+                            {
+                                "type": "all",
+                                "value": 2
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "ballista_arbalest",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 1.5
+                            },
+                            {
+                                "type": "splash",
+                                "value": 1.584
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "prowler",
+                "health": 1000,
+                "stagger": 250,
+                "damageModifiers": [
+                    {
+                        "weaponID": "plasma_microwave",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.166
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "rocket_remotedet",
+                        "damage": [
+                            {
+                                "type": "mastery",
+                                "value": 0.6
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "supershotgun",
+                        "damage": [
+                            {
+                                "type": "all",
+                                "value": 1.5
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "soldier",
+                "health": 400,
+                "stagger": 150,
+                "damageModifiers": [
+                    {
+                        "weaponID": "plasma",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.7777
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "plasma_microwave",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.4
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "supershotgun",
+                        "damage": [
+                            {
+                                "type": "all",
+                                "value": 1.5
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "chaingun_energyshield",
+                        "damage": [
+                            {
+                                "type": "mastery",
+                                "value": 2
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "flamebelch",
+                        "damage": [
+                            {
+                                "type": "all",
+                                "value": 1.05
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "soldier_shield",
+                "health": 500,
+                "stagger": 175,
+                "damageModifiers": [
+                    {
+                        "weaponID": "heavycannon_micromissiles",
+                        "damage": [
+                            {
+                                "type": "splash",
+                                "value": 1.2
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "plasma",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.7777
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "plasma_microwave",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.5
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "supershotgun",
+                        "damage": [
+                            {
+                                "type": "all",
+                                "value": 1.5
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "chaingun_energyshield",
+                        "damage": [
+                            {
+                                "type": "mastery",
+                                "value": 2
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "flamebelch",
+                        "damage": [
+                            {
+                                "type": "all",
+                                "value": 1.05
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "zombie",
+                "health": 200,
+                "stagger": 100,
+                "damageModifiers": [
+                    {
+                        "weaponID": "plasma",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.7777
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "plasma_microwave",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.2
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "supershotgun",
+                        "damage": [
+                            {
+                                "type": "all",
+                                "value": 2
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "zombie_mecha",
+                "health": 500,
+                "stagger": 175,
+                "damageModifiers": [
+                    {
+                        "weaponID": "plasma",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.7777
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "plasma_microwave",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.5
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "supershotgun",
+                        "damage": [
+                            {
+                                "type": "all",
+                                "value": 1.5
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "chaingun_energyshield",
+                        "damage": [
+                            {
+                                "type": "mastery",
+                                "value": 2.25
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "maykrdrone",
+                "health": 800,
+                "stagger": 240,
+                "armor": 0.5,
+                "damageModifiers": [
+                    {
+                        "weaponID": "shotgun",
+                        "damage": [
+                            {
+                                "type": "all",
+                                "value": 1.2,
+                                "cap": 320
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "heavycannon_micromissiles",
+                        "damage": [
+                            {
+                                "type": "splash",
+                                "value": 1.25
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "plasma_microwave",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.8
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "shotgun_sticky",
+                        "damage": [
+                            {
+                                "type": "splash_hs",
+                                "value": 4
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "heavycannon_precision",
+                        "damage": [
+                            {
+                                "type": "direct_hs",
+                                "value": 3.75
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "rocket",
+                        "damage": [
+                            {
+                                "type": "direct_hs",
+                                "value": 3.75
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "archvile",
+                "health": 6000,
+                "stagger": 510,
+                "damageModifiers": [
+                    {
+                        "weaponID": "plasma_microwave",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.4
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "rocket_remotedet",
+                        "damage": [
+                            {
+                                "type": "mastery",
+                                "value": 0.6
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "ballista_arbalest",
+                        "damage": [
+                            {
+                                "type": "splash",
+                                "value": 0.5
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "bfg",
+                        "damage": [
+                            {
+                                "type": "tendril",
+                                "value": 1,
+                                "cap": 30
+                            },
+                            {
+                                "type": "direct",
+                                "value": 1.5
+                            },
+                            {
+                                "type": "splash",
+                                "value": 1.5
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "baron",
+                "health": 7000,
+                "stagger": 490,
+                "damageModifiers": [
+                    {
+                        "weaponID": "plasma_microwave",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.466
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "rocket_remotedet",
+                        "damage": [
+                            {
+                                "type": "mastery",
+                                "value": 0.6
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "rocket_lockon",
+                        "damage": [
+                            {
+                                "type": "all",
+                                "value": 0.7
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "ballista_arbalest",
+                        "damage": [
+                            {
+                                "type": "splash",
+                                "value": 0.5
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "bfg",
+                        "damage": [
+                            {
+                                "type": "tendril",
+                                "value": 1,
+                                "cap": 30
+                            },
+                            {
+                                "type": "direct",
+                                "value": 1.5
+                            },
+                            {
+                                "type": "splash",
+                                "value": 1.5
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "doomhunter",
+                "health": 7500,
+                "health_boss1": 18000,
+                "health_boss2": 12000,
+                "stagger": 470,
+                "stagger_boss1": 180,
+                "stagger_boss2": 120,
+                "sledbreak": 5000,
+                "sledbreak_boss1": 12000,
+                "sledbreak_boss2": 8000,
+                "damageModifiers": [
+                    {
+                        "weaponID": "shotgun",
+                        "damage": [
+                            {
+                                "type": "all",
+                                "value": 1.2,
+                                "cap": 320
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "heavycannon_micromissiles",
+                        "damage": [
+                            {
+                                "type": "splash",
+                                "value": 1.3
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "plasma_microwave",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.533
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "rocket_remotedet",
+                        "damage": [
+                            {
+                                "type": "mastery",
+                                "value": 0.6
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "rocket_lockon",
+                        "damage": [
+                            {
+                                "type": "all",
+                                "value": 0.75
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "ballista_arbalest",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 1.5
+                            },
+                            {
+                                "type": "splash",
+                                "value": 0.5
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "bfg",
+                        "damage": [
+                            {
+                                "type": "tendril",
+                                "value": 1,
+                                "cap": 30
+                            },
+                            {
+                                "type": "direct",
+                                "value": 1.5
+                            },
+                            {
+                                "type": "splash",
+                                "value": 1.5
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "bloodpunch",
+                        "damage": [
+                            {
+                                "type": "all",
+                                "value": 4
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "marauder",
+                "health": 5000,
+                "stagger": 500,
+                "damageModifiers": [
+                    {
+                        "weaponID": "heavycannon_micromissiles",
+                        "damage": [
+                            {
+                                "type": "splash",
+                                "value": 1.05
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "plasma_microwave",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.333
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "rocket",
+                        "damage": [
+                            {
+                                "type": "splash",
+                                "value": 0.5
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "rocket_remotedet",
+                        "damage": [
+                            {
+                                "type": "mastery",
+                                "value": 0.6
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "ballista_arbalest",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.75
+                            },
+                            {
+                                "type": "splash",
+                                "value": 0.5
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "ballista_destroyerblade",
+                        "damage": [
+                            {
+                                "type": "all",
+                                "value": 0.75
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "bfg",
+                        "damage": [
+                            {
+                                "type": "tendril",
+                                "value": 1,
+                                "cap": 30
+                            },
+                            {
+                                "type": "direct",
+                                "value": 1.5
+                            },
+                            {
+                                "type": "splash",
+                                "value": 1.5
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "crucible",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "frag",
+                        "damage": [
+                            {
+                                "type": "splash",
+                                "value": 0.5
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "marauder_wolf",
+                "health": 150,
+                "stagger": 0,
+                "damageModifiers": [
+                    {
+                        "weaponID": "plasma_microwave",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.333
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "flamebelch",
+                        "damage": [
+                            {
+                                "type": "all",
+                                "value": 0
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "tyrant",
+                "health": 10000,
+                "stagger": 500,
+                "damageModifiers": [
+                    {
+                        "weaponID": "plasma_microwave",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.666
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "rocket_remotedet",
+                        "damage": [
+                            {
+                                "type": "mastery",
+                                "value": 0.6
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "rocket_lockon",
+                        "damage": [
+                            {
+                                "type": "all",
+                                "value": 0.7
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "supershotgun",
+                        "damage": [
+                            {
+                                "type": "all",
+                                "value": 1.4,
+                                "cap": 1600
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "ballista_arbalest",
+                        "damage": [
+                            {
+                                "type": "splash",
+                                "value": 0.5
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "bfg",
+                        "damage": [
+                            {
+                                "type": "tendril",
+                                "value": 1,
+                                "cap": 30
+                            },
+                            {
+                                "type": "direct",
+                                "value": 1.5
+                            },
+                            {
+                                "type": "splash",
+                                "value": 1.5
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "gladiator",
+                "health": 15000,
+                "health2": 25000,
+                "stagger": 750,
+                "stagger2": 250,
+                "damageModifiers": [
+                    {
+                        "weaponID": "plasma_microwave",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.4
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "rocket",
+                        "damage": [
+                            {
+                                "type": "splash",
+                                "value": 0.5
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "rocket_remotedet",
+                        "damage": [
+                            {
+                                "type": "mastery",
+                                "value": 0.6
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "bfg",
+                        "damage": [
+                            {
+                                "type": "tendril",
+                                "value": 1,
+                                "cap": 25
+                            },
+                            {
+                                "type": "direct",
+                                "value": 0.666
+                            },
+                            {
+                                "type": "splash",
+                                "value": 0.666
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "unmaykr",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.666
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "frag",
+                        "damage": [
+                            {
+                                "type": "splash",
+                                "value": 0.5
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "flamebelch",
+                        "damage": [
+                            {
+                                "type": "all",
+                                "value": 0
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "iconofsin",
+                "health": -1,
+                "armor_hand": 3000,
+                "armor_arm_gut": 4500,
+                "armor_chest": 6500,
+                "armor_head": 7500,
+                "health_hand": 3000,
+                "health_arm_gut": 5000,
+                "health_chest": 9000,
+                "health_head": 11000,
+                "stagger": 0,
+                "damageModifiers": [
+                    {
+                        "weaponID": "plasma_microwave",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.4
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "rocket",
+                        "damage": [
+                            {
+                                "type": "all",
+                                "value": 0.75
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "rocket_remotedet",
+                        "damage": [
+                            {
+                                "type": "mastery",
+                                "value": 0.6
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "rocket_lockon",
+                        "damage": [
+                            {
+                                "type": "all",
+                                "value": 0.45
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "supershotgun",
+                        "damage": [
+                            {
+                                "type": "all",
+                                "value": 0.5
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "ballista",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.85
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "ballista_arbalest",
+                        "damage": [
+                            {
+                                "type": "all",
+                                "value": 0.5
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "ballista_destroyerblade",
+                        "damage": [
+                            {
+                                "type": "all",
+                                "value": 0.67
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "chaingun",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.75
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "chaingun_mobileturret",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.4
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "bfg",
+                        "damage": [
+                            {
+                                "type": "tendril",
+                                "value": 1,
+                                "cap": 25
+                            },
+                            {
+                                "type": "direct",
+                                "value": 10
+                            },
+                            {
+                                "type": "splash",
+                                "value": 0
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "unmaykr",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.33
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "flamebelch",
+                        "damage": [
+                            {
+                                "type": "all",
+                                "value": 0
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "khanmaykr",
+                "health": 3000,
+                "stagger": 0,
+                "damageModifiers": [
+                    {
+                        "weaponID": "shotgun_fullauto",
+                        "damage": [
+                            {
+                                "type": "all",
+                                "value": 0.9
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "heavycannon_precision",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 1.2
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "heavycannon_micromissiles",
+                        "damage": [
+                            {
+                                "type": "splash",
+                                "value": 0.75
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "plasma",
+                        "damage": [
+                            {
+                                "type": "all",
+                                "value": 0.9
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "plasma_microwave",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.16
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "rocket",
+                        "damage": [
+                            {
+                                "type": "all",
+                                "value": 0.75
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "rocket_remotedet",
+                        "damage": [
+                            {
+                                "type": "mastery",
+                                "value": 0.6
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "rocket_lockon",
+                        "damage": [
+                            {
+                                "type": "all",
+                                "value": 0.45
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "ballista",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.75
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "ballista_arbalest",
+                        "damage": [
+                            {
+                                "type": "all",
+                                "value": 0.5
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "ballista_destroyerblade",
+                        "damage": [
+                            {
+                                "type": "all",
+                                "value": 0.55
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "chaingun",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.75
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "chaingun_mobileturret",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.4
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "bfg",
+                        "damage": [
+                            {
+                                "type": "tendril",
+                                "value": 1,
+                                "cap": 25
+                            },
+                            {
+                                "type": "direct",
+                                "value": 1.5
+                            },
+                            {
+                                "type": "splash",
+                                "value": 1.5
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "unmaykr",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.5
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "flamebelch",
+                        "damage": [
+                            {
+                                "type": "all",
+                                "value": 0
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

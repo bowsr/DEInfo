@@ -1,0 +1,43 @@
+Troopers
+    First damage instance will get re-applied if it wasn't enough to kill.
+    This re-application happens up to 7 times, or enough to kill.
+    Dash and Frag Impacts have a scalar of zero, so this re-application still happens
+        but is zeroed out; basically skipping it.
+    Meathook, while it does zero damage, doesn't have a scalar of zero, so the damage
+        re-applicaiton does 84 damage.
+
+Stone Imps
+    Some damage scalars are applied on top of the base scalar.
+    Any scalars listed in the "damageModifiers" are applied on top of the base scalar.
+    "stoneModifiers" are not.
+
+Destroyer Blade & Arbalest Impact
+    Fodder, Carcasses, and Prowlers all take an extra 9999 damage from the impact of an
+        Arbalest shot, and any Destroyer Blade charge level.
+
+Cursed Prowler
+    When cursed, all damage on the Cursed Prowler is reduced to zero, except for Blood Punch.
+    Blood Punch's 4x scalar is applied again if cursed. (2400 when not cursed; 9600 when cursed)
+
+Riot Soldiers
+    Immune to headshots.
+
+Screecher Zombies
+    Screechers have health regeneration. The regen rate is per second.
+    Seems to be applied every half second, but still equals the same rate/s
+    Regen starts 3 seconds after the last damage instance.
+
+Cacodemon
+    Staggering a Cacodemon with a sticky bomb or frag grenade causes 1000 damage
+
+Staggers
+    When a demon recovers from a stagger, its health resets to half.
+    If the demon's health is above the amount that it would get reset to, their health does not reset.
+    Each subsequent stagger recovery resets health to half the previous successful reset.
+    (e.g. Revenant has 2000HP; first stagger recovery is 1000HP, then 500HP, etc)
+
+Hammer
+    Hammer damage source is hammer_slam_aoe_super.decl. No idea where any mitigation values are.
+    Some demons take 1.25x more damage from the Hammer (Imps/Turrets/MaykrDrones)
+    Need to test the rest of the demons.
+        
