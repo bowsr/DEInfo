@@ -42,13 +42,19 @@ Hammer
     Need to test the rest of the demons.
 
 Crucible
-    Doom Hunter
-        Crucible was nerfed in Update 2 to only do 0.25x damage against Doom Hunters and the Gladiator.
-        This change does not affect normal Doom Hunters since crucible is set to oneshot the sled, and sledless HP is 2500.
-        (Does affect Doom Hunter Boss variants when sledless)
+    Crucible was nerfed in Update 2 to only do 0.25x damage against Doom Hunters and the Gladiator.
+    This change does not affect normal Doom Hunters since crucible is set to oneshot the sled, and sledless HP is 2500.
+    (Does affect Doom Hunter Boss variants when sledless)
 
 Doom Hunter
     Doom Hunters take 1.5x damage when their shield is broken. (Does not apply to BP)
     Crucible is redirected to the sled, even if you hit the shield. So is Blood Punch.
     Heat Blast is redirected to the shield.
+
+Dark Lord
+    Dark Lord has 3 phases, but 5 healthbars.
+    Phase 1 is a single healthbar. Phase 2 is two healthbars (more total health, less per single bar) Phase 3 is two healthbars (equal to two phase1 bars).
+    Instead of the standard way damage is tracked by the game (damage reduces HP), Dark Lord just tracks damage dealt.
+        This means his HP starts at zero (technically max but gets set to "damageDealt" at the first damage instance).
+    Stagger happens when damageDealt >= HP
         
