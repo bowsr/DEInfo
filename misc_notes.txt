@@ -57,4 +57,12 @@ Dark Lord
     Instead of the standard way damage is tracked by the game (damage reduces HP), Dark Lord just tracks damage dealt.
         This means his HP starts at zero (technically max but gets set to "damageDealt" at the first damage instance).
     Stagger happens when damageDealt >= HP
+
+
+
+TODO
+    Spirit/Screecher Buffs
+    Armored Baron Mace
+    Weapon Firerates
+    ...
         
