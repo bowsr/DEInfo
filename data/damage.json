@@ -393,6 +393,7 @@
                 "id": "arachnotron",
                 "health": 3000,
                 "stagger": 500,
+                "intro": true,
                 "damageModifiers": [
                     {
                         "weaponID": "heavycannon_micromissiles",
@@ -436,6 +437,7 @@
                 "id": "cacodemon",
                 "health": 2500,
                 "stagger": 500,
+                "intro": true,
                 "damageModifiers": [
                     {
                         "weaponID": "plasma_microwave",
@@ -483,6 +485,7 @@
                 "id": "dreadknight",
                 "health": 3000,
                 "stagger": 500,
+                "intro": true,
                 "damageModifiers": [
                     {
                         "weaponID": "plasma_microwave",
@@ -521,6 +524,7 @@
                 "id": "hellknight",
                 "health": 2500,
                 "stagger": 500,
+                "intro": true,
                 "damageModifiers": [
                     {
                         "weaponID": "heavycannon_micromissiles",
@@ -564,6 +568,7 @@
                 "id": "mancubus",
                 "health": 3500,
                 "stagger": 500,
+                "intro": true,
                 "damageModifiers": [
                     {
                         "weaponID": "plasma_microwave",
@@ -602,6 +607,7 @@
                 "id": "mancubus_cyber",
                 "health": 6000,
                 "stagger": 500,
+                "intro": true,
                 "damageModifiers": [
                     {
                         "weaponID": "plasma_microwave",
@@ -645,6 +651,7 @@
                 "id": "painelemental",
                 "health": 5000,
                 "stagger": 500,
+                "intro": true,
                 "damageModifiers": [
                     {
                         "weaponID": "plasma_microwave",
@@ -693,6 +700,7 @@
                 "health": 1000,
                 "stagger": 300,
                 "armor": 0.1,
+                "intro": true,
                 "damageModifiers": [
                     {
                         "weaponID": "plasma_microwave",
@@ -740,6 +748,7 @@
                 "id": "pinky_spectre",
                 "health": 2000,
                 "stagger": 400,
+                "intro": true,
                 "damageModifiers": [
                     {
                         "weaponID": "plasma_microwave",
@@ -783,6 +792,7 @@
                 "id": "revenant",
                 "health": 2000,
                 "stagger": 500,
+                "intro": true,
                 "damageModifiers": [
                     {
                         "weaponID": "plasma_microwave",
@@ -808,6 +818,7 @@
                 "id": "whiplash",
                 "health": 2000,
                 "stagger": 500,
+                "intro": true,
                 "damageModifiers": [
                     {
                         "weaponID": "plasma_microwave",
@@ -833,6 +844,7 @@
                 "id": "tentacle",
                 "health": 150,
                 "stagger": 0,
+                "intro": true,
                 "damageModifiers": [
                     {
                         "weaponID": "plasma_microwave",
@@ -849,6 +861,7 @@
                 "id": "cueball",
                 "health": 25,
                 "stagger": 0,
+                "intro": true,
                 "damageModifiers": [
                     {
                         "weaponID": "plasma_microwave",
@@ -865,6 +878,7 @@
                 "id": "carcass",
                 "health": 1200,
                 "stagger": 240,
+                "intro": true,
                 "damageModifiers": [
                     {
                         "weaponID": "plasma_microwave",
@@ -890,6 +904,7 @@
                 "id": "gargoyle",
                 "health": 300,
                 "stagger": 120,
+                "intro": true,
                 "damageModifiers": [
                     {
                         "weaponID": "plasma",
@@ -924,6 +939,7 @@
                 "id": "imp",
                 "health": 200,
                 "stagger": 90,
+                "intro": true,
                 "damageModifiers": [
                     {
                         "weaponID": "plasma",
@@ -958,6 +974,7 @@
                 "id": "lostsoul",
                 "health": 100,
                 "stagger": 0,
+                "intro": true,
                 "damageModifiers": [
                     {
                         "weaponID": "plasma_microwave",
@@ -996,6 +1013,7 @@
                 "id": "prowler",
                 "health": 1000,
                 "stagger": 250,
+                "intro": true,
                 "damageModifiers": [
                     {
                         "weaponID": "plasma_microwave",
@@ -1030,6 +1048,7 @@
                 "id": "soldier",
                 "health": 400,
                 "stagger": 150,
+                "intro": true,
                 "damageModifiers": [
                     {
                         "weaponID": "plasma",
@@ -1082,6 +1101,7 @@
                 "id": "soldier_shield",
                 "health": 500,
                 "stagger": 175,
+                "intro": true,
                 "damageModifiers": [
                     {
                         "weaponID": "heavycannon_micromissiles",
@@ -1143,6 +1163,7 @@
                 "id": "zombie",
                 "health": 200,
                 "stagger": 100,
+                "intro": true,
                 "damageModifiers": [
                     {
                         "weaponID": "plasma",
@@ -1177,6 +1198,7 @@
                 "id": "zombie_mecha",
                 "health": 500,
                 "stagger": 175,
+                "intro": true,
                 "damageModifiers": [
                     {
                         "weaponID": "plasma",
@@ -1221,6 +1243,7 @@
                 "health": 800,
                 "stagger": 240,
                 "armor": 0.5,
+                "intro": true,
                 "damageModifiers": [
                     {
                         "weaponID": "shotgun",
@@ -1283,6 +1306,7 @@
                 "id": "archvile",
                 "health": 6000,
                 "stagger": 510,
+                "intro": true,
                 "damageModifiers": [
                     {
                         "weaponID": "plasma_microwave",
@@ -1335,6 +1359,7 @@
                 "id": "baron",
                 "health": 7000,
                 "stagger": 490,
+                "intro": true,
                 "damageModifiers": [
                     {
                         "weaponID": "plasma_microwave",
@@ -1404,6 +1429,7 @@
                 "sledbreak_boss1": 12000,
                 "sledbreak_boss2": 8000,
                 "unshieldedBonus": 1.5,
+                "intro": true,
                 "damageModifiers": [
                     {
                         "weaponID": "shotgun",
@@ -1497,6 +1523,7 @@
                 "id": "marauder",
                 "health": 5000,
                 "stagger": 500,
+                "intro": true,
                 "damageModifiers": [
                     {
                         "weaponID": "heavycannon_micromissiles",
@@ -1598,6 +1625,7 @@
                 "id": "marauder_wolf",
                 "health": 150,
                 "stagger": 0,
+                "intro": true,
                 "damageModifiers": [
                     {
                         "weaponID": "plasma_microwave",
@@ -1623,6 +1651,7 @@
                 "id": "tyrant",
                 "health": 10000,
                 "stagger": 500,
+                "intro": true,
                 "damageModifiers": [
                     {
                         "weaponID": "plasma_microwave",
@@ -1696,6 +1725,7 @@
                 "health2": 25000,
                 "stagger": 750,
                 "stagger2": 250,
+                "intro": true,
                 "damageModifiers": [
                     {
                         "weaponID": "plasma_microwave",
@@ -1783,6 +1813,7 @@
                 "health_chest": 9000,
                 "health_head": 11000,
                 "stagger": 0,
+                "intro": true,
                 "damageModifiers": [
                     {
                         "weaponID": "plasma_microwave",
@@ -1916,6 +1947,7 @@
                 "id": "khanmaykr",
                 "health": 3000,
                 "stagger": 0,
+                "intro": true,
                 "damageModifiers": [
                     {
                         "weaponID": "shotgun_fullauto",
@@ -2503,6 +2535,7 @@
                 "id": "turret",
                 "health": 1000,
                 "stagger": 0,
+                "intro": true,
                 "damageModifiers": [
                     {
                         "weaponID": "shotgun",
@@ -2577,6 +2610,7 @@
                 "id": "spirit",
                 "health": 2750,
                 "stagger": 0,
+                "intro": true,
                 "damageModifiers": [
                     {
                         "weaponID": "plasma_microwave",
@@ -2593,6 +2627,7 @@
                 "id": "samur",
                 "health": 6000,
                 "stagger": 510,
+                "intro": true,
                 "damageModifiers": [
                     {
                         "weaponID": "shotgun_fullauto",
@@ -2779,6 +2814,7 @@
                 "id": "baron_armored",
                 "armor": 0.5,
                 "armorHP": 3000,
+                "intro": true,
                 "armorModifiers": [
                     {
                         "weaponID": "plasma",
@@ -2855,6 +2891,7 @@
             },
             {
                 "id": "prowler_cursed",
+                "intro": true,
                 "damageModifiers": [
                     {
                         "weaponID": "bloodpunch",
@@ -2871,6 +2908,7 @@
                 "id": "soldier_riot",
                 "health": 500,
                 "stagger": 175,
+                "intro": true,
                 "damageModifiers": [
                     {
                         "weaponID": "rocket_remotedet",
@@ -2888,6 +2926,7 @@
                 "health": 100,
                 "stagger": 0,
                 "regen": 25,
+                "intro": true,
                 "damageModifiers": [
                     {
                         "weaponID": "shotgun",
@@ -2949,6 +2988,7 @@
                 "health": 200,
                 "stagger": 50,
                 "armor": 0.15,
+                "intro": true,
                 "damageModifiers": [
                     {
                         "weaponID": "plasma_heatblast",
@@ -3088,6 +3128,7 @@
                 "id": "trooper",
                 "health": 35,
                 "stagger": 0,
+                "intro": true,
                 "damageModifiers": [
                     {
                         "weaponID": "frag",
@@ -3126,6 +3167,7 @@
                 "health_stage3": 20000,
                 "stagger": 0,
                 "armor": 0.35,
+                "intro": true,
                 "damageModifiers": [
                     {
                         "weaponID": "bfg",
