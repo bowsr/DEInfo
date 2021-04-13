@@ -1,7 +1,7 @@
 {
     "1.0": {
         "id": 10,
-        "prev": -1,
+        "next": 11,
         "weapons": [
             {
                 "id": "shotgun",
@@ -2076,7 +2076,7 @@
     },
     "1.1": {
         "id": 11,
-        "prev": 10,
+        "next": 21,
         "weapons": [],
         "demons": [
             {
@@ -2409,7 +2409,7 @@
     },
     "2.1": {
         "id": 21,
-        "prev": 11,
+        "next": 31,
         "weapons": [],
         "demons": [
             {
@@ -2496,7 +2496,7 @@
     },
     "3.1": {
         "id": 31,
-        "prev": 21,
+        "next": 41,
         "weapons": [],
         "demons": [
             {
@@ -2756,13 +2756,13 @@
     },
     "4.1": {
         "id": 41,
-        "prev": 31,
+        "next": 50,
         "weapons": [],
         "demons": []
     },
     "5.0": {
         "id": 50,
-        "prev": 41,
+        "next": -1,
         "weapons": [
             {
                 "id": "hammer",
