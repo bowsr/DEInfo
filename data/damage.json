@@ -2948,7 +2948,7 @@
                 "id": "imp_stone",
                 "health": 200,
                 "stagger": 50,
-                "baseModifier": 0.15,
+                "armor": 0.15,
                 "damageModifiers": [
                     {
                         "weaponID": "plasma_heatblast",
@@ -3125,7 +3125,7 @@
                 "health_stage2": 15000,
                 "health_stage3": 20000,
                 "stagger": 0,
-                "nonFalterResistance": 0.35,
+                "armor": 0.35,
                 "damageModifiers": [
                     {
                         "weaponID": "bfg",
