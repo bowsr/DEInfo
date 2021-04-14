@@ -16,8 +16,8 @@ Destroyer Blade & Arbalest Impact
         Arbalest shot, and any Destroyer Blade charge level.
 
 Cursed Prowler
-    When cursed, all damage on the Cursed Prowler is reduced to zero, except for Blood Punch.
-    Blood Punch's 4x scalar is applied again if cursed. (2400 when not cursed; 9600 when cursed)
+    When cursed, all damage on the Cursed Prowler is reduced to zero, except for Blood Punch which is increased by another 4x.
+    Blood Punch's 4x scalar is applied twice if cursed. (2400 when not cursed; 9600 when cursed)
 
 Riot Soldiers
     Immune to headshots.
@@ -57,6 +57,10 @@ Dark Lord
     Instead of the standard way damage is tracked by the game (damage reduces HP), Dark Lord just tracks damage dealt.
         This means his HP starts at zero (technically max but gets set to "damageDealt" at the first damage instance).
     Stagger happens when damageDealt >= HP
+
+Remote Det
+    Splash damage from a manual detonation takes base damage value from remotedet and modifiers from base RL splash (if RD modifiers doesn't exist).
+     (e.g. Marauder takes 200 of 400 dmg from RD splash, but there's no modifier in the RD file so it inherits 0.5x from RL splash).
 
 
 
