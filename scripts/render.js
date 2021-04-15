@@ -166,9 +166,9 @@ function getBaseWeapons(versions) {
     if (weapons === null) weapons = [];
     if (current.getWeaponsList().length > 0) {
         current.getWeaponsList().forEach(function (w) {
-            if (!(weapons.find(function (weap) {
+            if (weapons.find(function (weap) {
                 return weap.id === w.id;
-            }) instanceof undefined)) weapons.push(w);
+            }) === undefined) weapons.push(w);
         });
     }
     var nextVersion = getNextVersionFromPrev(versions, current.id);
