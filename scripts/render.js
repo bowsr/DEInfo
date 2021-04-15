@@ -410,8 +410,7 @@ var MainPage = function (_React$Component2) {
             }).then(function (result) {
                 _this3.setState({
                     isLoaded: true,
-                    versionList: setupDamageData(result),
-                    baseWeapons: getBaseWeapons(_this3.state.versionList)
+                    versionList: setupDamageData(result)
                 });
             }, function (error) {
                 _this3.setState({
@@ -442,6 +441,7 @@ var MainPage = function (_React$Component2) {
                     'Loading'
                 );
             } else {
+                var baseWeapons = getBaseWeapons(this.state.versionList);
                 return (
                     //<ArmoredBaron versions={versionList} />
                     React.createElement(Shotgun, { weapon: getSingleBaseWeapon(baseWeapons, 'shotgun') })
