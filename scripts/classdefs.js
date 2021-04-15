@@ -95,4 +95,7 @@ var Version = function Version(versionID, demonList, weaponList, prev) {
             return weapon.id === weaponID;
         });
     };
+    this.getWeaponsList = function () {
+        return weapons;
+    };
 };

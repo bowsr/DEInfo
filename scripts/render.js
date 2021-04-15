@@ -110,6 +110,15 @@ function getVersionFromID(versions, vID) {
     });
     return ver;
 }
+
+function getNextVersionFromPrev(versions, prevID) {
+    var ver = null;
+    versions.forEach(function (v) {
+        if (v.prev == prevID) ver = v;
+    });
+    return ver;
+}
+
 // For getting values like health/stagger/armor (stuff that isn't stored in Maps)
 function getValue(demon, key, versions) {
     var current = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : null;
@@ -147,36 +156,265 @@ function getExtraInfoValue(demon, key, versions) {
     return value;
 }
 
-var ArmoredBaron = function (_React$Component) {
-    _inherits(ArmoredBaron, _React$Component);
+// For getting an array of weapons for their base values
+// This function currently does not support updates that change base values (not likely to happen in the future since they haven't changed since release)
+function getBaseWeapons(versions) {
+    var weapons = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
+    var current = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : null;
 
-    function ArmoredBaron(props) {
-        _classCallCheck(this, ArmoredBaron);
+    if (current === null) current = getVersionFromID(versions, 10);
+    if (weapons === null) weapons = [];
+    if (current.getWeaponsList().length > 0) {
+        current.getWeaponsList().forEach(function (w) {
+            if (!(weapons.find(function (weap) {
+                return weap.id === w.id;
+            }) instanceof undefined)) weapons.push(w);
+        });
+    }
+    var nextVersion = getNextVersionFromPrev(versions, current.id);
+    return nextVersion === null ? weapons : getBaseWeaponValues(versions, weapons, nextVersion);
+}
 
-        var _this = _possibleConstructorReturn(this, (ArmoredBaron.__proto__ || Object.getPrototypeOf(ArmoredBaron)).call(this, props));
+function getSingleBaseWeapon(weapons, id) {
+    var weapon;
+    weapons.forEach(function (w) {
+        if (w.id == id) weapon = w;
+    });
+    return weapon;
+}
+
+function translateID(id) {
+    var name;
+    switch (id) {
+        case 'shotgun':
+            name = 'Combat Shotgun';
+            break;
+        case 'shotgun_sticky':
+            name = 'Sticky Bombs';
+            break;
+        case 'shotgun_fullauto':
+            name = 'Full Auto';
+            break;
+        case 'heavycannon':
+            name = 'Heavy Cannon';
+            break;
+        case 'heavycannon_precision':
+            name = 'Precision Bolt';
+            break;
+        case 'heavycannon_micromissiles':
+            name = 'Micro Missiles';
+            break;
+        case 'plasma':
+            name = 'Plasma Rifle';
+            break;
+        case 'plasma_heatblast':
+            name = 'Heat Blast';
+            break;
+        case 'plasma_microwave':
+            name = 'Microwave Beam';
+            break;
+        case 'rocket':
+            name = 'Rocket Launcher';
+            break;
+        case 'rocket_remotedet':
+            name = 'Remote Detonate';
+            break;
+        case 'rocket_lockon':
+            name = 'Lock-on Burst';
+            break;
+        case 'supershotgun':
+            name = 'Super Shotgun';
+            break;
+        case 'ballista':
+            name = 'Ballista';
+            break;
+        case 'ballista_arbalest':
+            name = 'Arbalest';
+            break;
+        case 'ballista_destroyer':
+            name = 'Destroyer Blade';
+            break;
+        case 'chaingun':
+            name = 'Chaingun';
+            break;
+        case 'chaingun_mobileturret':
+            name = 'Mobile Turret';
+            break;
+        case 'chaingun_energyshield':
+            name = 'Energy Shield';
+            break;
+        case 'bfg':
+            name = 'BFG';
+            break;
+        case 'unmaykr':
+            name = 'Unmaykr';
+            break;
+        case 'crucible':
+            name = 'Crucible';
+            break;
+        case 'frag':
+            name = 'Frag Grenade';
+            break;
+        case 'bloodpunch':
+            name = 'Blood Punch';
+            break;
+        case 'dash':
+            name = 'Dash';
+            break;
+        case 'punch':
+            name = 'Punch';
+            break;
+        case 'flamebelch':
+            name = 'Flame Belch';
+            break;
+        case 'hammer':
+            name = 'Sentinel Hammer';
+            break;
+        default:
+            name = 'error';
+            break;
+    }
+    return name;
+}
+
+function ArmoredBaron(props) {
+    return React.createElement(
+        'div',
+        null,
+        React.createElement(
+            'h2',
+            null,
+            'Armored Baron'
+        ),
+        React.createElement(
+            'h3',
+            null,
+            'Stats'
+        ),
+        React.createElement(
+            'p',
+            null,
+            'Health: ',
+            getValue('baron', 'health', props.versions)
+        ),
+        React.createElement(
+            'p',
+            null,
+            'Stagger Threshold: ',
+            getValue('baron', 'stagger', props.versions)
+        ),
+        React.createElement(
+            'p',
+            null,
+            'Armor HP: ',
+            getExtraInfoValue('baron_armored', 'armorHP', props.versions)
+        )
+    );
+}
+
+var Shotgun = function (_React$Component) {
+    _inherits(Shotgun, _React$Component);
+
+    function Shotgun(props) {
+        _classCallCheck(this, Shotgun);
+
+        var _this = _possibleConstructorReturn(this, (Shotgun.__proto__ || Object.getPrototypeOf(Shotgun)).call(this, props));
 
         _this.state = {
-            error: null,
-            isLoaded: false,
-            versions: []
+            name: translateID(weapon.id),
+            pellets: weapon.pellets,
+            min: getDamageValue('minimum'),
+            max: getDamageValue('maximum'),
+            pb: getDamageValue('pointblank')
         };
         return _this;
     }
 
-    _createClass(ArmoredBaron, [{
+    _createClass(Shotgun, [{
+        key: 'render',
+        value: function render() {
+            return React.createElement(
+                'div',
+                null,
+                React.createElement(
+                    'h2',
+                    null,
+                    this.state.name
+                ),
+                React.createElement(
+                    'h3',
+                    null,
+                    'Damage Stats'
+                ),
+                React.createElement(
+                    'p',
+                    null,
+                    'Pellets: ',
+                    this.state.pellets
+                ),
+                React.createElement(
+                    'p',
+                    null,
+                    'Minimum: ',
+                    this.state.min
+                ),
+                React.createElement(
+                    'p',
+                    null,
+                    'Maximum: ',
+                    this.state.max
+                ),
+                React.createElement(
+                    'p',
+                    null,
+                    'Point Blank: ',
+                    this.state.pb
+                ),
+                React.createElement(
+                    'p',
+                    null,
+                    'Total Damage (Point Blank): ',
+                    this.state.pellets * this.state.pb
+                )
+            );
+        }
+    }]);
+
+    return Shotgun;
+}(React.Component);
+
+var MainPage = function (_React$Component2) {
+    _inherits(MainPage, _React$Component2);
+
+    function MainPage(props) {
+        _classCallCheck(this, MainPage);
+
+        var _this2 = _possibleConstructorReturn(this, (MainPage.__proto__ || Object.getPrototypeOf(MainPage)).call(this, props));
+
+        _this2.state = {
+            error: null,
+            isLoaded: false,
+            versionList: [],
+            baseWeapons: []
+        };
+        return _this2;
+    }
+
+    _createClass(MainPage, [{
         key: 'componentDidMount',
         value: function componentDidMount() {
-            var _this2 = this;
+            var _this3 = this;
 
             fetch('https://bowsr.github.io/de-info/data/damage.json').then(function (res) {
                 return res.json();
             }).then(function (result) {
-                _this2.setState({
+                _this3.setState({
                     isLoaded: true,
-                    versions: setupDamageData(result)
+                    versionList: setupDamageData(result),
+                    baseWeapons: getBaseWeapons(versionList)
                 });
             }, function (error) {
-                _this2.setState({
+                _this3.setState({
                     isLoaded: true,
                     error: error
                 });
@@ -188,7 +426,7 @@ var ArmoredBaron = function (_React$Component) {
             var _state = this.state,
                 error = _state.error,
                 isLoaded = _state.isLoaded,
-                versions = _state.versions;
+                versionList = _state.versionList;
 
             if (error) {
                 return React.createElement(
@@ -204,46 +442,17 @@ var ArmoredBaron = function (_React$Component) {
                     'Loading'
                 );
             } else {
-                var _currentPatch = getCurrentPatch(versions);
-                return React.createElement(
-                    'div',
-                    null,
-                    React.createElement(
-                        'h2',
-                        null,
-                        'Armored Baron'
-                    ),
-                    React.createElement(
-                        'h3',
-                        null,
-                        'Stats'
-                    ),
-                    React.createElement(
-                        'p',
-                        null,
-                        'Health: ',
-                        getValue('baron', 'health', versions)
-                    ),
-                    React.createElement(
-                        'p',
-                        null,
-                        'Stagger Threshold: ',
-                        getValue('baron', 'stagger', versions)
-                    ),
-                    React.createElement(
-                        'p',
-                        null,
-                        'Armor HP: ',
-                        getExtraInfoValue('baron_armored', 'armorHP', versions)
-                    )
+                return (
+                    //<ArmoredBaron versions={versionList} />
+                    React.createElement(Shotgun, { weapon: getSingleBaseWeapon(baseWeapons, 'shotgun') })
                 );
             }
         }
     }]);
 
-    return ArmoredBaron;
+    return MainPage;
 }(React.Component);
 
-var element = React.createElement(ArmoredBaron, null);
+var element = React.createElement(MainPage, null);
 
 ReactDOM.render(element, document.getElementById('root'));
