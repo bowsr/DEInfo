@@ -186,6 +186,7 @@ function getSingleBaseWeapon(weapons, id) {
 function translateID(id) {
     var name;
     switch (id) {
+        // Damage Sources
         case 'shotgun':
             name = 'Combat Shotgun';
             break;
@@ -270,6 +271,133 @@ function translateID(id) {
         case 'hammer':
             name = 'Sentinel Hammer';
             break;
+        // Demons
+        case 'arachnotron':
+            name = 'Arachnotron';
+            break;
+        case 'cacodemon':
+            name = 'Cacodemon';
+            break;
+        case 'dreadknight':
+            name = 'Dread Knight';
+            break;
+        case 'hellknight':
+            name = 'Hell Knight';
+            break;
+        case 'mancubus':
+            name = 'Mancubus';
+            break;
+        case 'mancubus_cyber':
+            name = 'Cyber Mancubus';
+            break;
+        case 'painelemental':
+            name = 'Pain Elemental';
+            break;
+        case 'pinky':
+            name = 'Pinky';
+            break;
+        case 'pinky_spectre':
+            name = 'Spectre (Pinky)';
+            break;
+        case 'revenant':
+            name = 'Revenant';
+            break;
+        case 'whiplash':
+            name = 'Whiplash';
+            break;
+        case 'tentacle':
+            name = 'Tentacle';
+            break;
+        case 'cueball':
+            name = 'Cueball';
+            break;
+        case 'carcass':
+            name = 'Carcass';
+            break;
+        case 'gargoyle':
+            name = 'Gargoyle';
+            break;
+        case 'imp':
+            name = 'Imp';
+            break;
+        case 'lostsoul':
+            name = 'Lost Soul';
+            break;
+        case 'prowler':
+            name = 'Prowler';
+            break;
+        case 'soldier':
+            name = 'Soldier';
+            break;
+        case 'soldier_shield':
+            name = 'Shield Soldier';
+            break;
+        case 'zombie':
+            name = 'Zombie';
+            break;
+        case 'zombie_mecha':
+            name = 'Mecha-Zombie';
+            break;
+        case 'maykrdrone':
+            name = 'Maykr Drone';
+            break;
+        case 'archvile':
+            name = 'Archvile';
+            break;
+        case 'baron':
+            name = 'Baron of Hell';
+            break;
+        case 'doomhunter':
+            name = 'Doom Hunter';
+            break;
+        case 'marauder':
+            name = 'Marauder';
+            break;
+        case 'marauder_wolf':
+            name = 'Marauder\'s Wolf';
+            break;
+        case 'tyrant':
+            name = 'Tyrant';
+            break;
+        case 'gladiator':
+            name = 'Gladiator';
+            break;
+        case 'iconofsin':
+            name = 'Icon of Sin';
+            break;
+        case 'khanmaykr':
+            name = 'Khan Maykr';
+            break;
+        case 'turret':
+            name = 'Turret';
+            break;
+        case 'spirit':
+            name = 'Spirit';
+            break;
+        case 'samur':
+            name = 'Samur';
+            break;
+        case 'baron_armored':
+            name = 'Armored Baron';
+            break;
+        case 'prowler_cursed':
+            name = 'Cursed Prowler';
+            break;
+        case 'soldier_riot':
+            name = 'Riot Soldier';
+            break;
+        case 'screecher':
+            name = 'Screecher Zombie';
+            break;
+        case 'imp_stone':
+            name = 'Stone Imp';
+            break;
+        case 'trooper':
+            name = 'Demonic Trooper';
+            break;
+        case 'darklord':
+            name = 'The Dark Lord';
+            break;
         default:
             name = 'error';
             break;
@@ -282,8 +410,8 @@ function ArmoredBaron(props) {
         'div',
         null,
         React.createElement(
-            'h2',
-            null,
+            'div',
+            { className: 'objectName' },
             'Armored Baron'
         ),
         React.createElement(
@@ -442,10 +570,9 @@ var MainPage = function (_React$Component2) {
                 );
             } else {
                 var baseWeapons = getBaseWeapons(this.state.versionList);
-                return (
-                    //<ArmoredBaron versions={versionList} />
-                    React.createElement(Shotgun, { weapon: getSingleBaseWeapon(baseWeapons, 'shotgun') })
-                );
+                return React.createElement(ArmoredBaron, { versions: versionList })
+                //<Shotgun weapon={getSingleBaseWeapon(baseWeapons, 'shotgun')} />
+                ;
             }
         }
     }]);
