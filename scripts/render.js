@@ -411,7 +411,7 @@ var MainPage = function (_React$Component2) {
                 _this3.setState({
                     isLoaded: true,
                     versionList: setupDamageData(result),
-                    baseWeapons: getBaseWeapons(versionList)
+                    baseWeapons: getBaseWeapons(_this3.state.versionList)
                 });
             }, function (error) {
                 _this3.setState({
