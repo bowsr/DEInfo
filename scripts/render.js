@@ -172,7 +172,7 @@ function getBaseWeapons(versions) {
         });
     }
     var nextVersion = getNextVersionFromPrev(versions, current.id);
-    return nextVersion === null ? weapons : getBaseWeaponValues(versions, weapons, nextVersion);
+    return nextVersion === null ? weapons : getBaseWeapons(versions, weapons, nextVersion);
 }
 
 function getSingleBaseWeapon(weapons, id) {
