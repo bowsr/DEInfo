@@ -321,11 +321,11 @@ var Shotgun = function (_React$Component) {
         var _this = _possibleConstructorReturn(this, (Shotgun.__proto__ || Object.getPrototypeOf(Shotgun)).call(this, props));
 
         _this.state = {
-            name: translateID(weapon.id),
-            pellets: weapon.pellets,
-            min: getDamageValue('minimum'),
-            max: getDamageValue('maximum'),
-            pb: getDamageValue('pointblank')
+            name: translateID(props.weapon.id),
+            pellets: props.weapon.pellets,
+            min: props.weapon.getDamageValue('minimum'),
+            max: props.weapon.getDamageValue('maximum'),
+            pb: props.weapon.getDamageValue('pointblank')
         };
         return _this;
     }
