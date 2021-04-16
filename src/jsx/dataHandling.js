@@ -27,6 +27,10 @@ class Demon {
         var damageModifiers = damageMap;
         var extraInfo = new Map(); // used for misc values (e.g. boss health for doom hunters, armored baron's armorhp)
 
+        this.getModifierList = function() {
+            return damageModifiers;
+        }
+
         this.getWeaponModifiers = function(weaponID) {
             return damageModifiers.get(weaponID);
         }
@@ -52,6 +56,10 @@ class StoneImp extends Demon {
     constructor(health, staggerHP, damageMap, stoneMap, armor, intro) {
         super('imp_stone', health, staggerHP, damageMap, armor, intro);
         var stoneModifiers = stoneMap;
+
+        this.getStoneModifierList = function() {
+            return stoneModifiers;
+        }
 
         this.getStoneModifiers = function(weaponID) {
             return stoneModifiers.get(weaponID);
@@ -248,6 +256,56 @@ function getSingleBaseWeapon(weapons, id) {
     return weapon;
 }
 
+function getModifiersWithVersionTarget(versions, demonID, alt = false, target = 50, current = null, modifiers = null) {
+    if(current === null) {
+        var vID = 10;
+        switch(demonID) {
+            case 'spirit':
+            case 'turret':
+            case 'samur':
+            case 'tentacle_super':
+                vID = 31;
+                break;
+            case 'baron_armored':
+            case 'imp_stone':
+            case 'soldier_riot':
+            case 'trooper':
+            case 'darklord':
+            case 'prowler_cursed':
+            case 'screecher':
+                vID = 50;
+                break;
+            default:
+                break;
+        }
+        current = getVersionFromID(versions, 10);
+    }
+    if(modifiers === null) modifiers = new Map();
+    demon = current.getDemon(demonID);
+    if(demon === undefined) {
+        var next = getNextVersionFromPrev(versions, current.id);
+        return (next === null) ? modifiers : getModifiersWithVersionTarget(versions, demonID, alt, target, next, modifiers);
+    }
+    var list;
+    if(alt && (demon instanceof StoneImp)) list = demon.getStoneModifierList();
+    else list = demon.getModifierList();
+    if(list.size > 0) {
+        list.forEach((dmg, wID) => {
+            var weapon = modifiers.get(wID);
+            if(weapon === undefined) modifiers.set(wID, dmg);
+            else {
+                var types = new Map();
+                dmg.forEach((v, t) => {
+                    types.set(t, v);
+                });
+                modifiers.set(wID, types);
+            }
+        });
+    }
+    var nextVersion = getNextVersionFromPrev(versions, current.id);
+    return (nextVersion === null || current.id == target) ? modifiers : getModifiersWithVersionTarget(versions, demonID, alt, target, nextVersion, modifiers);
+}
+
 function translateID(id) {
     var name;
     switch(id) {
@@ -439,6 +497,9 @@ function translateID(id) {
         case 'spirit':
             name = 'Spirit';
             break;
+        case 'tentacle_super':
+            name = 'Super Tentacle';
+            break;
         case 'samur':
             name = 'Samur';
             break;
@@ -482,5 +543,6 @@ export {
     getExtraInfoValue,
     getBaseWeapons,
     getSingleBaseWeapon,
+    getModifiersWithVersionTarget,
     translateID
 }
