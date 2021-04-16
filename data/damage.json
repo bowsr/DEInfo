@@ -2624,6 +2624,59 @@
                 ]
             },
             {
+                "id": "tentacle_super",
+                "health": 4000,
+                "stagger": 0,
+                "intro": true,
+                "damageModifiers": [
+                    {
+                        "weaponID": "rocket_lockon",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.75
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "supershotgun",
+                        "damage": [
+                            {
+                                "type": "all",
+                                "value": 0.75
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "ballista_destroyer",
+                        "damage": [
+                            {
+                                "type": "all",
+                                "value": 1.5
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "chaingun",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.5
+                            }
+                        ]
+                    },
+                    {
+                        "weaponID": "chaingun_mobileturret",
+                        "damage": [
+                            {
+                                "type": "direct",
+                                "value": 0.5
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
                 "id": "samur",
                 "health": 6000,
                 "stagger": 510,
