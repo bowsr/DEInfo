@@ -2944,75 +2944,7 @@
             {
                 "id": "bloodmaykr",
                 "health": 5000,
-                "damageModifiers": [
-                    {
-                        "weaponID": "shotgun_sticky",
-                        "damage": [
-                            {
-                                "type": "splash_hs",
-                                "value": 300
-                            }
-                        ]
-                    },
-                    {
-                        "weaponID": "heavycannon_precision",
-                        "damage": [
-                            {
-                                "type": "direct_hs",
-                                "value": 100
-                            }
-                        ]
-                    },
-                    {
-                        "weaponID": "rocket",
-                        "damage": [
-                            {
-                                "type": "direct_hs",
-                                "value": 15
-                            }
-                        ]
-                    },
-                    {
-                        "weaponID": "ballista",
-                        "damage": [
-                            {
-                                "type": "direct_hs",
-                                "value": 25
-                            }
-                        ]
-                    },
-                    {
-                        "weaponID": "ballista_arbalest",
-                        "damage": [
-                            {
-                                "type": "direct_hs",
-                                "value": 25
-                            },
-                            {
-                                "type": "splash_hs",
-                                "value": 22
-                            }
-                        ]
-                    },
-                    {
-                        "weaponID": "ballista_destroyer",
-                        "damage": [
-                            {
-                                "type": "all",
-                                "value": 1.75
-                            }
-                        ]
-                    },
-                    {
-                        "weaponID": "unmaykr",
-                        "damage": [
-                            {
-                                "type": "all",
-                                "value": 2.25
-                            }
-                        ]
-                    }
-                ]
+                "damageModifiers": []
             },
             {
                 "id": "baron_armored",
