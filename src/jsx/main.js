@@ -102,6 +102,7 @@ class VersionSelector extends React.Component {
 class MainPage extends React.Component {
     constructor(props) {
         super(props);
+        this.handleVersionChange = this.handleVersionChange.bind(this);
         this.state = {
             error: null,
             isLoaded: false,
