@@ -1,3 +1,4 @@
-.objectName {
-    color: red;
+.lowVersionWarning {
+    color: darkred;
+    font-size: 10px;
 }

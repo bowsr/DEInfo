@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { setupDamageData, getValue, getExtraInfoValue, getBaseWeapons, getSingleBaseWeapon, getModifiersWithVersionTarget, translateID, translateVersionID } from './dataHandling';
+import { setupDamageData, getValue, getExtraInfoValue, getBaseWeapons, getSingleBaseWeapon, getModifiersWithVersionTarget, translateID, translateVersionID, Demon } from './dataHandling';
 
 /*
 function ArmoredBaron(props) {
@@ -16,28 +16,52 @@ function ArmoredBaron(props) {
 }
 */
 
+function DemonBaseInfo(props) {
+    var name = translateID(props.demonID);
+    var hp = getValue(props.demonID, 'health', props.versions, props.target);
+    var stagger = Math.trunc(hp * getValue(props.demonID, 'stagger', props.versions, props.target));
+    return (
+        <div>
+            <h2>{name}</h2>
+            <h3>Stats</h3>
+            <p>Health: {hp}</p>
+            <p>Stagger Threshold: {stagger}</p>
+        </div>
+    )
+}
+
+function DemonDamageModifiers(props) {
+
+}
+
+function TooLowVersionWarning(props) {
+    if(props.target >= props.intro) return (<div></div>);
+    return (
+        <div>
+            <div className='lowVersionWarning'>Data does not exist for the version you selected ({translateVersionID(props.target)})</div>
+            <div className='lowVersionWarning'>Showing data for version {translateVersionID(props.intro)} instead</div>
+        </div>
+    )
+}
+
 class ArmoredBaron extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            name: 'Armored Baron',
-            hp: getValue('baron', 'health', props.versions),
-            stagger: getValue('baron', 'stagger', props.versions),
-            armor: getValue('baron_armored', 'armor', props.versions),
-            armorHP: getExtraInfoValue('baron_armored', 'armorHP', props.versions),
-            armorModifiers: getModifiersWithVersionTarget(props.versions, 'baron_armored', false, 50),
-            modifiers: getModifiersWithVersionTarget(props.versions, 'baron', false, 50)
+            armorHP: getExtraInfoValue('baron_armored', 'armorHP', this.props.versions),
+            armorModifiers: getModifiersWithVersionTarget(this.props.versions, 'baron_armored', false, 50),
+            modifiers: getModifiersWithVersionTarget(this.props.versions, 'baron', false, 50),
+            intro: 50
         };
     }
 
     render() {
-        const { name, hp, stagger, armorHP, armorModifiers, modifiers } = this.state;
+        const { name, hp, stagger, armorHP, armorModifiers, modifiers, intro } = this.state;
+        const selectedVersion = (this.props.selectedVersion < intro) ? intro : this.props.selectedVersion;
         return (
             <div>
-                <h2>{name}</h2>
-                <h3>Stats</h3>
-                <p>Health: {hp}</p>
-                <p>Stagger Threshold: {hp * stagger}</p>
+                <TooLowVersionWarning target={this.props.selectedVersion} intro={intro} />
+                <DemonBaseInfo demonID={'baron_armored'} versions={this.props.versions} target={selectedVersion} />
                 <p>Armor HP: {armorHP}</p>
                 <h3>Damage against Armor</h3>
                 <div>
@@ -92,7 +116,7 @@ class VersionSelector extends React.Component {
             selections.push(<option key={id} value={id}>{translateVersionID(id)}</option>)
         });
         return (
-            <select value={this.props.defaultVersion} onChange={this.handleChange}>
+            <select value={this.props.selectedVersion} onChange={this.handleChange}>
                 {selections}
             </select>
         );
@@ -149,8 +173,8 @@ class MainPage extends React.Component {
             return (
                 <div>
                     <div>Selected Version: {translateVersionID(current)}</div>
-                    <VersionSelector defaultVersion={current} versionIDs={versionIDList} onVersionChange={this.handleVersionChange} />
-                    <ArmoredBaron versions={versionList} />
+                    <VersionSelector selectedVersion={current} versionIDs={versionIDList} onVersionChange={this.handleVersionChange} />
+                    <ArmoredBaron versions={versionList} selectedVersion={current} />
                     {/* <Shotgun weapon={getSingleBaseWeapon(baseWeapons, 'shotgun')} /> */}
                 </div>
             );
