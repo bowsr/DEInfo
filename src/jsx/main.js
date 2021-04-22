@@ -129,7 +129,7 @@ class MainPage extends React.Component {
     }
 
     handleVersionChange(value) {
-        this.setState({version: value});
+        this.setState({current: value});
     }
 
     render() {
