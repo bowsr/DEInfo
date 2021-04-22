@@ -204,6 +204,10 @@ function getNextVersionFromPrev(versions, prevID) {
 // For getting values like health/stagger/armor (stuff that isn't stored in Maps)
 function getValue(demon, key, versions, current = null) {
     if(current === null) current = getCurrentPatch(versions);
+    if((key === 'health' || key === 'stagger')) {
+        if(demon === 'baron_armored') demon = 'baron';
+        if(demon === 'prowler_cursed') demon = 'prowler';
+    }
     var d = current.getDemon(demon);
     if(d === undefined) return (current.prev === -1) ? null : getValue(demon, key, versions, getVersionFromID(versions, current.prev));
     var value;
