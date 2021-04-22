@@ -234,7 +234,7 @@ function getExtraInfoValue(demon, key, versions, current = null) {
     return value;
 }
 
-// For getting an array of weapons to use their base values
+// For getting an array of weapons to use for their base values
 // This function currently does not support updates that change base values (not likely to happen in the future since they haven't changed since release)
 function getBaseWeapons(versions, weapons = null, current = null) {
     if(current === null) current = getVersionFromID(versions, 10);
@@ -259,11 +259,13 @@ function getSingleBaseWeapon(weapons, id) {
 function getModifiersWithVersionTarget(versions, demonID, alt = false, target = 50, current = null, modifiers = null) {
     if(current === null) {
         var vID = 10;
+        // Set the versionID to start at in the case of dlc demons since they won't have data from prior versions
         switch(demonID) {
             case 'spirit':
             case 'turret':
             case 'samur':
             case 'tentacle_super':
+            case 'bloodmaykr':
                 vID = 31;
                 break;
             case 'baron_armored':
@@ -278,7 +280,7 @@ function getModifiersWithVersionTarget(versions, demonID, alt = false, target = 
             default:
                 break;
         }
-        current = getVersionFromID(versions, 10);
+        current = getVersionFromID(versions, vID);
     }
     if(modifiers === null) modifiers = new Map();
     demon = current.getDemon(demonID);
@@ -295,9 +297,10 @@ function getModifiersWithVersionTarget(versions, demonID, alt = false, target = 
             if(weapon === undefined) modifiers.set(wID, dmg);
             else {
                 var types = new Map();
-                dmg.forEach((v, t) => {
-                    types.set(t, v);
-                });
+                // Add existing data from previous versions
+                weapon.forEach((v, t) => { types.set(t, v); });
+                // Add data from current version (will overwrite old data with matching keys if it exists)
+                dmg.forEach((v, t) => { types.set(t, v); });
                 modifiers.set(wID, types);
             }
         });
@@ -531,6 +534,34 @@ function translateID(id) {
     return name;
 }
 
+function translateVersionID(vID) {
+    var version;
+    switch(vID) {
+        case 10:
+            version = '1.0 (Release)';
+            break;
+        case 11:
+            version = '1.1';
+            break;
+        case 21:
+            version = '2.1';
+            break;
+        case 31:
+            version = '3.1';
+            break;
+        case 41:
+            version = '4.1';
+            break;
+        case 50:
+            version = '5.0';
+            break;
+        default:
+            version = null;
+            break;
+    }
+    return version;
+}
+
 
 export {
     Weapon,
@@ -544,5 +575,6 @@ export {
     getBaseWeapons,
     getSingleBaseWeapon,
     getModifiersWithVersionTarget,
-    translateID
+    translateID,
+    translateVersionID
 }
