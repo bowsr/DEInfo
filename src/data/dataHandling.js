@@ -569,11 +569,6 @@ function translateVersionID(vID) {
 
 
 export {
-    Weapon,
-    DamageCapModifier,
-    Demon,
-    StoneImp,
-    Version,
     setupDamageData,
     getValue,
     getExtraInfoValue,
