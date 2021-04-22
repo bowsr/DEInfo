@@ -148,7 +148,7 @@ class MainPage extends React.Component {
             versionIDList.sort((a, b) => b - a);
             return (
                 <div>
-                    <div>Selected Version: {current}</div>
+                    <div>Selected Version: {translateVersionID(current)}</div>
                     <VersionSelector defaultVersion={current} versionIDs={versionIDList} onVersionChange={this.handleVersionChange} />
                     <ArmoredBaron versions={versionList} />
                     {/* <Shotgun weapon={getSingleBaseWeapon(baseWeapons, 'shotgun')} /> */}
