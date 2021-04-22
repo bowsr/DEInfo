@@ -283,7 +283,7 @@ function getModifiersWithVersionTarget(versions, demonID, alt = false, target = 
         current = getVersionFromID(versions, vID);
     }
     if(modifiers === null) modifiers = new Map();
-    demon = current.getDemon(demonID);
+    var demon = current.getDemon(demonID);
     if(demon === undefined) {
         var next = getNextVersionFromPrev(versions, current.id);
         return (next === null) ? modifiers : getModifiersWithVersionTarget(versions, demonID, alt, target, next, modifiers);
